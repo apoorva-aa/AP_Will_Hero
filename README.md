@@ -21,11 +21,11 @@ This project is a clone of the game Will Hero built using Java and JavaFx.
 
 ## DESIGN PATTERNS USED
 * 🎨Singleton
-** Used to create a single instance of game class. 
+*Used to create a single instance of game class. 
 * 🎨 Decorator
-** Used in Serializable and Deserializable.
+*Used in Serializable and Deserializable.
 * 🎨Façade
-** Used to detect collisions of the Player with various obstacles.
+*Used to detect collisions of the Player with various obstacles.
 
 
 
