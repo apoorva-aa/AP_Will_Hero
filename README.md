@@ -1,6 +1,6 @@
 This project is a clone of the game Will Hero built using Java and JavaFx.
 
-##FEATURES AND FUNCTIONALITY
+## FEATURES AND FUNCTIONALITY
 
 ⭐️ Game 🎮 progresses with increasing difficulty till the player defeats the Boss Orc.
 
@@ -11,7 +11,7 @@ This project is a clone of the game Will Hero built using Java and JavaFx.
 * Save Game and Restart Game options: User can save multiple game states.
 * The player earns coins on the way and is given a chance to resurrect if it dies, which requires 50 coins.
 
-##IMPLEMENTATION OVERVIEW
+## IMPLEMENTATION OVERVIEW
  
 * The project follows a strict object-oriented paradigm with well-defined classes for each component of the gameplay.
 * The implementation of the user interface was achieved using FXML and CSS for further UI improvements, applied using SceneBuilder.
@@ -19,7 +19,7 @@ This project is a clone of the game Will Hero built using Java and JavaFx.
 * It takes into account various design patterns of software development. Additionally, serialization has been implemented to store the progress during a particular setting of the game.
 * Exceptions handled – IOException,  and ClassNotFoundException
 
-##DESIGN PATTERNS USED
+## DESIGN PATTERNS USED
 🎨Singleton
 Used to create a single instance of game class. 
 🎨 Decorator
