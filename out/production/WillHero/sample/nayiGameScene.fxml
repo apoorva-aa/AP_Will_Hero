@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../background.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="pausebutton" fitHeight="41.0" fitWidth="39.0" onMouseClicked="#pauseGame" pickOnBounds="true" preserveRatio="true" translateX="-520.0" translateY="-330.0">
+            <image>
+                <Image url="@../pause_icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="movebutton" fitHeight="46.0" fitWidth="40.0" onMouseClicked="#movePlayer" pickOnBounds="true" preserveRatio="true" translateX="-150.0" translateY="340.0">
+            <image>
+                <Image url="@../rightmove.jpeg" />
+            </image>
+        </ImageView>
+        <Label fx:id="noOfCoins" text="0" textFill="YELLOW" translateX="-250.0" translateY="-322.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="60.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="-150.0" translateY="-320.0">
+            <image>
+                <Image url="@../Coin.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="score" layoutX="539.0" layoutY="344.0" text="0" textFill="YELLOW" translateX="20.0" translateY="-322.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="60.0" />
+            </font>
+        </Label>
+        <Label fx:id="gameover" opacity="0.0" text="GAME OVER" textFill="#ea1616" translateY="-75.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="96.0" />
+            </font>
+        </Label>
+        <Label fx:id="resurrect" onMouseClicked="#resurrectHero" opacity="0.0" style="-fx-background-color: white; -fx-label-padding: 3; -fx-background-radius: 20; -fx-border-color: green; -fx-border-width: 3; -fx-border-radius: 10;" text="RESURRECT" textFill="GREEN" translateX="-200.0" translateY="50.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="37.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="resumeview" fitHeight="46.0" fitWidth="47.0" onMouseClicked="#resumeGame" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="-360.0" translateY="-150.0">
+            <image>
+                <Image url="@../resume_icon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="resumebutton" alignment="CENTER" opacity="0.0" prefHeight="51.0" prefWidth="158.0" style="-fx-background-color: WHITE; -fx-label-padding: 5; -fx-background-radius: 20; -fx-border-color: green; -fx-border-width: 3; -fx-border-radius: 20;" text="RESUME" textFill="GREEN" translateX="-250.0" translateY="-150.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="restartview" fitHeight="46.0" fitWidth="47.0" onMouseClicked="#restartGame" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="40.0" translateY="-150.0">
+            <image>
+                <Image url="@../restart_icon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="restartbutton" alignment="CENTER" opacity="0.0" prefHeight="51.0" prefWidth="163.0" style="-fx-background-color: white; -fx-label-padding: 5; -fx-background-radius: 20; -fx-border-color: green; -fx-border-width: 3; -fx-border-radius: 20;" text="RESTART" textFill="GREEN" translateX="150.0" translateY="-150.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="saveview" fitHeight="46.0" fitWidth="47.0" onMouseClicked="#saveGame" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="-360.0" translateY="-25.0">
+            <image>
+                <Image url="@../save_icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="exitview" fitHeight="46.0" fitWidth="47.0" onMouseClicked="#restartGame" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="50.0" translateY="-25.0">
+            <image>
+                <Image url="@../exit_icon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="savebutton" alignment="CENTER" layoutX="509.0" layoutY="357.0" opacity="0.0" prefHeight="51.0" prefWidth="167.0" style="-fx-background-color: white; -fx-label-padding: 5; -fx-background-radius: 20; -fx-border-color: green; -fx-border-width: 3; -fx-border-radius: 20;" text="SAVE GAME" textFill="GREEN" translateX="-245.0" translateY="-25.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="exiticon" alignment="CENTER" layoutX="509.0" layoutY="357.0" opacity="0.0" prefHeight="51.0" prefWidth="128.0" style="-fx-background-color: white; -fx-label-padding: 5; -fx-background-radius: 20; -fx-border-color: red; -fx-border-radius: 20; -fx-border-width: 3;" text="EXIT" textFill="#e42b06" translateX="150.0" translateY="-25.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="restartbutton1" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#restartGame" opacity="0.0" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: white; -fx-label-padding: 3; -fx-background-radius: 20; -fx-border-color: #190080; -fx-border-width: 3; -fx-border-radius: 10;" text="RESTART" textAlignment="CENTER" textFill="#190080" translateX="75.0" translateY="50.0">
+            <font>
+                <Font name="HP Simplified Jpan Regular" size="37.0" />
+            </font>
+        </Label>
+    </children>
+</StackPane>

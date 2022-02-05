@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../HomePage.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playbutton" fitHeight="88.0" fitWidth="277.0" layoutX="154.0" layoutY="469.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../play_icon.png" />
+         </image>
+         <effect>
+            <Glow>
+               <input>
+                  <InnerShadow />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
